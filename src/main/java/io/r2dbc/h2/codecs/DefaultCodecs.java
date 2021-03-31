@@ -125,6 +125,7 @@ public final class DefaultCodecs implements Codecs {
                 new DoubleCodec(),
                 new FloatCodec(),
                 new IntegerCodec(),
+                new JsonCodec(),
                 new LocalDateCodec(),
                 new LocalDateTimeCodec(client),
                 new LocalTimeCodec(),
