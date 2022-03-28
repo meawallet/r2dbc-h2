@@ -22,9 +22,9 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.r2dbc</groupId>
+    <groupId>com.meapay.commons</groupId>
     <artifactId>r2dbc-h2</artifactId>
-    <version>MEA-0.8.6.RELEASE</version>
+    <version>0.8.6-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Reactive Relational Database Connectivity - H2</name>
@@ -446,10 +446,11 @@
         <profile>
             <id>snapshot</id>
             <distributionManagement>
-                <snapshotRepository>
-                    <id>sonatype</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-                </snapshotRepository>
+                <repository>
+                    <id>codeartifact</id>
+                    <name>codeartifact</name>
+                    <url>https://meapay-backend-114259167659.d.codeartifact.eu-central-1.amazonaws.com/maven/meapay-snapshots</url>
+                </repository>
             </distributionManagement>
         </profile>
 
